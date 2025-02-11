@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100%;
+            background-color: #f1f1f1;
+        }
+        #stopwatch {
+        font-size: 2em;
+        margin-bottom: 20px;
+        }
+        .btn{
+            font-size: 1.2em;
+            margin: 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #fff; 
+            width: 200px;
+        }
+        .btn:active{
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="stopwatch">0</div>
+        <button id="play" class="btn" onclick="timer1.play()">Play</button>
+        <button id="pause" class="btn" onclick="timer1.pause()">Pause</button>
+        <button id="reset" class="btn" onclick="timer1.reset()">Reset</button>
+        <a href="index.html">Back to questions</a>
+    </div>
+    <script src="script.js">
+    </script>
+</body>
+</html>
