@@ -125,7 +125,8 @@ var invocationCount = 0;
         this.name = name;
         this.year = year;
         invocationCount++;
-        if(this != globalThis || new.target){
+        // if(this != globalThis || new.target){
+        if(new.target){
             instanceCount++;
         }
     }
